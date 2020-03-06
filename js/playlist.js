@@ -1,13 +1,3 @@
-// $(document).ready(function() {
-//    $("#create-playtlist").click(function(){
-//       var a = document.getElementsByName("scheckbox");
-//       if($(a).is(":checked")){
-//          $("checkboxes").show();
-//       } else{
-//          $("checkboxes").hide();
-//       }
-//    })
-// });
 $(document).ready(function(){
    $('button#create-playlist').click(function(){
        $.each($("input[name='scheckbox']:not(:checked)"), function () {

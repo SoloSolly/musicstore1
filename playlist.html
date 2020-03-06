@@ -3,231 +3,429 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
     <link href="https://fonts.googleapis.com/css?family=Damion&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/playlist.css" rel="stylesheet" type="text/css">
     <title>Playlist</title>
 </head>
-<body>
-    
+<body>    
+    <div id="genre-html">
+        <div class="topnav">
+            <a class="active" href="playlist.html">Playlist</a>
+            <a href="index.html">HOME</a>
+            <a href="genre.html">Genre</a>
+            <a href="songs.html">Songs</a>
+        </div><br>
     <div class="top-bar">
+        <img src="images/top-bar-imiage.jpg">
         <p>Search...</p>
     </div>
     <div class="playlist-body">
-        <div class="playlist-filter">
-            <div class="playlist-music-filter-artist">
-                <select id="playlist-artist">
-                    <option value="bahati">Bahati</option>
-                    <option value="willy-paul">Willy-Paul</option>
-                    <option value="guardian-angle">Guardian Angle</option>
-                    <option value="rickross">Rickross</option>
-                    <option value="chris-brown">Chris Brown</option>
-                    <option value="boondocks">Boondocks-gang</option>
-                    <option value="ethic">Ethic</option>
-                    <option value="sailors">Sailors</option>
-                </select>
+        <div class="row">
+            <div class="col-md-4">
+                <h1>TRACK</h1>
             </div>
-            <div class="playlist-music-filter-genre">
-                <select id="playlist-genre">
-                    <option value="hip-hop">Hip hop</option>
-                    <option value="gospel">Gospel</option>
-                    <option value="edm">Electronic dance</option>
-                    <option value="reggae">Reggae</option>
-                    <option value="rhumba">Rhumba</option>
-                    <option value="rnb">Rhythm and Blues</option>
-                    <option value="jazz">Jazz</option>
-                </select>
+            <div class="col-md-4">
+                <h1>ARTIST</h1>
             </div>
-            <button></button>
-        </div>  
-        <button class='button play'></button>
-        <button class='button pause'></button>
-        <div class="playlist-music">
-        <div class="barua">
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Barua</p> 
-            <p>Artist:Bahati</p>                
+            <div class="col-md-4">
+                <h1>SELECT</h1>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Story Yangu</p> 
-            <p>Artist:Bahati</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button pause'></button><button class='button play'></button>Barua</p>
+                <audio src="songs/barua.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Bahati</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="barua" class="scheckbox" name="scheckbox" value="barua"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Machozi</p> 
-            <p>Artist:Bahati</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Story Yangu</p>
+                <audio src="songs/story-yangu.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Bahati</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="story-yangu" class="scheckbox" name="scheckbox" value="story-yangu"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Njiwa</p> 
-            <p>Artist:Willy Paul</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Machozi</p>
+                <audio src="songs/machozi.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Bahati</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="machozi" class="scheckbox" name="scheckbox" value="machozi"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Jigijigi</p> 
-            <p>Artist:Willy Paul</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Kitanzi</p>
+                <audio src="songs/kitanzi.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Willy Paul</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="kitanzi" class="scheckbox" name="scheckbox" value="kitanzi"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Kitanzi</p> 
-            <p>Artist:Willy Paul</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Njiwa</p> 
+                <audio src="songs/njiwa.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Willy Paul</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="njiwa" class="scheckbox" name="scheckbox" value="njiwa"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Nadeke</p> 
-            <p>Artist:Guardian angle</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Jigijigi</p>
+                <audio src="songs/jigjigi.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Willy Paul</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="jigijigi" name="scheckbox" value="jigijigi"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Kuongozwa</p> 
-            <p>Artist:Guardian angle</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Nadeka</p>
+                <audio src="songs/nadeka.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Guardian angel</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="nadeke" name="scheckbox" value="nadeke"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Nibariki</p> 
-            <p>Artist:Guardian angle</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Kuongozwa</p>
+                <audio src="songs/kuongozwa.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Guardian angel</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="kuongozwa" name="scheckbox" value="kuongozwa"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Thug cry</p> 
-            <p>Artist:Rickross</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Nibariki</p>
+                <audio src="songs/nibariki.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Guardian angel</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="nibariki" name="scheckbox" value="nibariki"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>The devil is a lie</p> 
-            <p>Artist:Rickross</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Thug Cry</p>
+                <audio src="songs/thug-cry.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Rickross</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="thug-cry" name="scheckbox" value="thug-cry"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Moncy dance</p> 
-            <p>Artist:Rickross</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Money dance</p> 
+                <audio src="songs/money-dance.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Rickross</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="moncy-dance" name="scheckbox" value="moncy-dance"></p>  
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>No sir</p> 
-            <p>Artist:Chris Brown</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>The devil is a lie</p> 
+                <audio src="songs/the-devil-is-a-lie.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Rickross</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="the-devil-is-a-lie" name="scheckbox" value="the-devil-is-a-lie"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Don't wake me up</p> 
-            <p>Artist:Chris Brown</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Loyal</p>
+                <audio src="songs/loyal.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Chris Brown</p> 
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="moncy-dance" name="scheckbox" value="moncy-dance"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Loyal</p> 
-            <p>Artist:Chris Brown</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>No air</p>
+                <audio src="songs/no-air.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Chris Brown</p> 
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="no-air" name="scheckbox" value="no-air"></p>
+            </div>
+        </div>        
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Don't wake me up</p>
+                <audio src="songs/dont-wake-me-up.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Chris Brown</p> 
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="loyal" name="scheckbox" value="loyal"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Lollipop</p> 
-            <p>Artist:Lil Wayne</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Drop the world</p> 
+                <audio src="songs/drop-the-world.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Lil Wayne</p>   
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="drop-the-world" name="scheckbox" value="drop-the-world"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Drop the world</p> 
-            <p>Artist:Lil Wayne</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Don't cry</p> 
+                <audio src="songs/dont-cry.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Lil Wayne</p>   
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="don't-cry" name="scheckbox" value="don't-cry"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Don't cry</p> 
-            <p>Artist:Lil Wayne</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Lollipop</p>
+                <audio src="songs/lollipop.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Lil wayne</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="lollipop" name="scheckbox" value="lollipop"></p> 
+           </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Taniua</p> 
-            <p>Artist:Boondocks-gang</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Taniua</p> 
+                <audio src="songs/taniua.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Boondocks-gang</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="taniua" name="scheckbox" value="taniua"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Choma ilale ndani</p> 
-            <p>Artist:Boondocks-gang</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Chuma ilale ndani</p> 
+                <audio src="songs/chuma-ilale-ndani.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Boondocks gang</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="choma-ilale-ndani" name="scheckbox" value="choma-ilale-ndani"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Mathogothanio</p> 
-            <p>Artist:Boondocks-gang</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Mathogothanio</p>
+                <audio src="songs/mathogothanio.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Boondocks gang</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="mathogothanio" name="scheckbox" value="mathogothanio"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Lamba lolo</p> 
-            <p>Artist:Ethic</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Lamba lolo</p> 
+                <audio src="songs/lamba-lolo.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Ethic</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="lamba-lolo" name="scheckbox" value="lamba-lolo"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Instagram</p> 
-            <p>Artist:Ethic</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Instagram</p> 
+                <audio src="songs/instagram.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Ethic</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="instagram" name="scheckbox" value="instagram"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Daktari</p> 
-            <p>Artist:Ethic</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Daktari</p> 
+                <audio src="songs/daktari.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Ethic</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="daktari" name="scheckbox" value="daktari"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Pekejeng</p> 
-            <p>Artist:Sailors</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Pekejeng</p> 
+                <audio src="songs/pekejeng.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Sailors</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="pekejeng" name="scheckbox" value="pekejeng"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Hex</p> 
-            <p>Artist:Sailors</p>                
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Hex</p> 
+                <audio src="songs/hex.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Sailors</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="hex" name="scheckbox" value="scheckbox"></p>
+            </div>
         </div>
-        <div class="barua" id=>
-            <button class='button play'></button>
-            <button class='button pause'></button> 
-            <p>Wamlambezi</p> 
-            <p>Artist:Sailors</p>                
-        </div>
-        <div class="playlist-playlist">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-            Why do we use it?
-            It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
-            
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consectetur risus ac magna fringilla, sed lobortis sapien tincidunt. Sed gravida blandit cursus. Donec accumsan nisl congue odio iaculis vehicula. Morbi ex mauris, imperdiet sed odio eget, bibendum aliquet leo. Pellentesque a diam a ipsum pulvinar consectetur. Sed metus dolor, elementum ac lacinia in, elementum eu lectus. Curabitur at condimentum nisi. Pellentesque risus lectus, sagittis id diam in, elementum iaculis eros. Fusce placerat lacus quam.
-
-            Pellentesque blandit massa quis vestibulum vestibulum. Morbi ut interdum dui. Integer facilisis felis id pulvinar tempus. Praesent at vulputate urna. Nunc in dolor tempus libero posuere dignissim. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vehicula mi lacus, eu fermentum dui efficitur vel. Aenean lobortis faucibus leo, sit amet congue ipsum pharetra id. Etiam faucibus tempor tempus.
-
-            Ut tincidunt enim at magna feugiat, ut auctor sem efficitur. Vivamus sed ultrices sapien. Quisque a fermentum ipsum, et convallis elit. Nullam sed porta diam, ac commodo diam. Proin mollis purus id nulla placerat eleifend. Aenean convallis ex erat, non efficitur dui suscipit non. Sed semper laoreet pharetra. Proin consectetur diam vitae enim tempor, eget lobortis enim molestie. Integer imperdiet pretium est in tempor. Ut vel hendrerit tortor. Pellentesque tincidunt, sem vel molestie pretium, lectus metus iaculis ex, in maximus sapien nunc sed lorem. In hac habitasse platea dictumst. Mauris lectus felis, posuere in nulla non, sodales tincidunt ipsum.
-
-            Mauris ornare quis felis vel volutpat. Suspendisse rhoncus dui erat, vestibulum viverra tellus consectetur ac. Vestibulum vitae libero at eros dictum imperdiet. Sed sed est eget sem facilisis tempus at eget nisl. Etiam rutrum congue enim vel fringilla. Nunc non enim enim. Aliquam aliquet lectus et enim eleifend pretium. Nullam suscipit libero sed magna finibus vulputate.
-
-            Sed sapien ipsum, aliquet ultricies dolor vel, semper tristique enim. Nullam diam sapien, sagittis pretium varius et, vestibulum sit amet velit. Aliquam sed tortor blandit, aliquet nisl eget, ullamcorper ante. Donec sit amet aliquet tellus, quis faucibus mauris. Proin id elit mi. Sed quis volutpat massa. Nam dictum viverra libero a pellentesque. Pellentesque euismod lorem vel mauris tempor facilisis. Duis ultricies mi quis ante commodo, sit amet mollis erat consectetur.</p>
-        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p><button class='button play'></button><button class='button pause'></button>Wamlambezi</p> 
+                <audio src="songs/wamlambezi.mp3" class="sounds"></audio>
+            </div>
+            <div class="col-md-4">
+                <p>Sailors</p>                
+            </div>
+            <div class="col-md-4">
+                <p><input type="checkbox" id="wamlambezi" name="scheckbox" value="wamlambezi"></p>
+            </div>
+        </div>    
+            <!-- </div>
+            <div class="col-md-4">
+                <h1>ARTIST</h1>
+                <p>Bahati</p>                
+                <p>Bahati</p>                
+                <p>Bahati</p>                
+                <p>Willy Paul</p>                
+                <p>Willy Paul</p>                
+                <p>Willy Paul</p>                
+                <p>Guardian angle</p>                
+                <p>Guardian angle</p>                
+                <p>Guardian angle</p>                
+                <p>Rickross</p>                
+                <p>Rickross</p>                
+                <p>Rickross</p>  
+                <p>Chris Brown</p> 
+                <p>Chris Brown</p>                
+                <p>Chris Brown</p>                
+                <p>Lil Wayne</p>   
+                <p>Lil Wayne</p>                
+                <p>Lil Wayne</p>                
+                <p>Boondocks-gang</p>                
+                <p>Boondocks-gang</p>                
+                <p>Boondocks-gang</p>                
+                <p>Ethic</p>                
+                <p>Ethic</p>                
+                <p>Ethic</p>                
+                <p>Sailors</p>                
+                <p>Sailors</p>                
+                <p>Sailors</p> 
+            </div>
+            <div class="col-md-4 checkboxes">
+                <h1>SELECT</h1>
+                <p><input type="checkbox" id="barua" class="scheckbox" name="scheckbox" value="barua"></p>
+                <p><input type="checkbox" id="story-yangu" class="scheckbox" name="scheckbox" value="story-yangu"></p>
+                <p><input type="checkbox" id="machozi" class="scheckbox" name="scheckbox" value="machozi"></p>
+                <p><input type="checkbox" id="njiwa" class="scheckbox" name="scheckbox" value="njiwa"></p>
+                <p><input type="checkbox" id="jigijigi" class="scheckbox" name="scheckbox" value="jigijigi"></p>
+                <p><input type="checkbox" id="kitanzi" name="scheckbox" value="kitanzi"></p>
+                <p><input type="checkbox" id="nadeke" name="scheckbox" value="nadeke"></p>
+                <p><input type="checkbox" id="kuongozwa" name="scheckbox" value="kuongozwa"></p>
+                <p><input type="checkbox" id="nibariki" name="scheckbox" value="nibariki"></p>
+                <p><input type="checkbox" id="thug-cry" name="scheckbox" value="thug-cry"></p>
+                <p><input type="checkbox" id="the-devil-is-a-lie" name="scheckbox" value="the-devil-is-a-lie"></p>
+                <p><input type="checkbox" id="moncy-dance" name="scheckbox" value="moncy-dance"></p>
+                <p><input type="checkbox" id="no-sir" name="scheckbox" value="no-sir"></p>
+                <p><input type="checkbox" id="dont-wake-me-up" name="scheckbox" value="dont-wake-me-up"></p>
+                <p><input type="checkbox" id="loyal" name="scheckbox" value="loyal"></p>
+                <p><input type="checkbox" id="lollipop" name="scheckbox" value="lollipop"></p>
+                <p><input type="checkbox" id="drop-the-world" name="scheckbox" value="drop-the-world"></p>
+                <p><input type="checkbox" id="don't-cry" name="scheckbox" value="don't-cry"></p>
+                <p><input type="checkbox" id="taniua" name="scheckbox" value="taniua"></p>
+                <p><input type="checkbox" id="choma-ilale-ndani" name="scheckbox" value="choma-ilale-ndani"></p>
+                <p><input type="checkbox" id="mathogothanio" name="scheckbox" value="mathogothanio"></p>
+                <p><input type="checkbox" id="lamba-lolo" name="scheckbox" value="lamba-lolo"></p>
+                <p><input type="checkbox" id="instagram" name="scheckbox" value="instagram"></p>
+                <p><input type="checkbox" id="daktari" name="scheckbox" value="daktari"></p>
+                <p><input type="checkbox" id="pekejeng" name="scheckbox" value="pekejeng"></p>
+                <p><input type="checkbox" id="hex" name="hex" value="scheckbox"></p>
+                <p><input type="checkbox" id="wamlambezi" name="scheckbox" value="wamlambezi"></p>
+            </div>
+        </div>-->
+        <button id="create-playlist">CREATE PLAYLIST</button>
     </div>
-    <div class="background-text">
-        <h>MUSIC</h>
+    <div class="glow">
+        <h>PLAYLIST</h>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="js/index.js"></script>
+    <script src="js/playlist.js"></script>
 </body>
 </html>

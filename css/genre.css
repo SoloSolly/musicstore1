@@ -1,0 +1,92 @@
+body {
+  background-color: #000;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../images/yello.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-left: 250px;
+  margin-right: 250px;
+  padding: initial;
+  margin-top: 50px;
+  background-attachment: fixed;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 70px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(211, 40, 40);
+}
+
+.topnav a.active {
+  background-color:green;
+  color: white;
+}
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 30px;
+  border: none;
+}
+#artist {
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.9);
+}
+#promote {
+  background-image: url(../music.jpeg;);
+  justify-content: center;
+  align-items: center;
+  
+}
+#promo  ul li a:hover {
+  background-color: green;
+ color: red;
+ justify-content: center;
+ align-content: center;
+ align-items: center;
+
+}
+#prom {
+  color: red;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+}
+#h3 {
+  font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+}
+#bahati, #willy, #gurdian, #rickross, .brown, #lilwayne, #bondox, .Ethic, #sailors{
+  display: none;
+  /* font-size: 30PX; */
+
+  
+}
+#bahatistory{
+  text-align: center;
+  margin-left: 60%;
+  margin-top: -30%;
+  font-size: 30px;
+
+}
+h1{
+  font-size: 49px;
+  color:brown;
+  font-weight: 3000;
+}
